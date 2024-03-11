@@ -32,7 +32,6 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
         </div>
       </div>
     </div>
-    :class="isMobile ? 'mobile' : 'desktop'"
   </template>
   <style scoped > @media (max-width: 768px) {
     .container {
