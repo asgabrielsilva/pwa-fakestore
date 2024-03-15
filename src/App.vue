@@ -2,6 +2,7 @@
   import { useMonitor } from '@/composables/monitor';
 
   const { menu } = useMonitor();
+  const { footer } = useMonitor();
 </script>
 
 <template>
@@ -11,7 +12,7 @@
       <router-view />
     </main>
     <footer>
-      <p>Copyright &copy; 2024</p>
+      <component :is="footer" />
     </footer>
   </div>
 </template>
